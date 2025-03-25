@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmashKit - Badminton Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-color: #ffe4e1;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #ffb6c1 !important;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .btn-success {
+            background-color: #ff69b4 !important;
+            border-color: #ff69b4 !important;
+        }
+        .btn-success:hover {
+            background-color: #ff1493 !important;
+        }
+        .card {
+            border: none;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .carousel-caption {
+            background: rgba(255, 182, 193, 0.8);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #ffb6c1;
+        }
+    </style>
+</head>
+<body>
+
+<header class="text-white p-3 text-center" style="background-color: #ffb6c1;">
+   
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Badminton Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="c:\Users\Manilyn\Music\WEEK7_GEL\index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="c:\Users\Manilyn\Music\WEEK7_GEL\Shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="c:\Users\Manilyn\Music\WEEK7_GEL\Services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="c:\Users\Manilyn\Music\WEEK7_GEL\About Us.html">About Us
+
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+</header>
+
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="c:\Users\Manilyn\Music\WEEK7_GEL\Screenshot 2025-03-25 155918_enhanced.png" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption">
+          <h3>Welcome to SmashKit</h3>
+          <p>Unleash Your Game with Gear That's Simply Perfect!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="c:\Users\Manilyn\Music\WEEK7_GEL\Screenshot 2025-03-25 205158_enhanced.png" class="d-block w-100" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="c:\Users\Manilyn\Music\WEEK7_GEL\Screenshot 2025-03-25 213448_enhanced.png" class="d-block w-100" alt="Slide 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<section class="text-center py-5 bg-light">
+    <h2>Find the Best Badminton Equipment</h2>
+    <p>Premium gear for players of all levels!</p>
+    <input type="text" id="searchBar" class="form-control w-50 mx-auto" placeholder="Search products...">
+</section>
+
+<section class="featured-products text-center py-5">
+    <h2>Featured Products</h2>
+    <div class="container">
+        <div class="row" id="product-list">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="c:\Users\Manilyn\Music\WEEK7_GEL\OIP.jfif" class="card-img-top" alt="Badminton Racket">
+                    <div class="card-body">
+                        <h5 class="card-title">Badminton Racket</h5>
+                        <p class="card-text">Php. 999</p>
+                        <button onclick="addToCart('SmashKit Badminton Racket', 120)" class="btn btn-success">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="c:\Users\Manilyn\Music\WEEK7_GEL\feather-shuttlecock-500x500.webp" class="card-img-top" alt="Shuttlecock">
+                    <div class="card-body">
+                        <h5 class="card-title">Feather Shuttlecocks</h5>
+                        <p class="card-text">Php. 499</p>
+                        <button onclick="addToCart('Feather Shuttlecock', 20)" class="btn btn-success">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="c:\Users\Manilyn\Music\WEEK7_GEL\yonex-4726-badminton-bag-1_1024x1024.webp" class="card-img-top" alt="Shuttlecock">
+                    <div class="card-body">
+                        <h5 class="card-title">Yonex Racket Bags</h5>
+                        <p class="card-text">Php. 1999</p>
+                        <button onclick="addToCart('SmashKit Racket Bags', 20)" class="btn btn-success">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="text-white py-4 mt-5 text-center">
+    <div class="container">
+        <p>&copy; 2024 Badminton Shop. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script>
+    function addToCart(item, price) {
+        let count = document.getElementById('cart-count');
+        count.innerText = parseInt(count.innerText) + 1;
+        alert(item + ' has been added to your cart!');
+    }
+
+    document.getElementById('searchBar').addEventListener('input', function() {
+        let filter = this.value.toLowerCase();
+        let products = document.querySelectorAll('#product-list .col-md-4');
+        
+        products.forEach(product => {
+            let title = product.querySelector('.card-title').innerText.toLowerCase();
+            if (title.includes(filter)) {
+                product.style.display = 'block';
+            } else {
+                product.style.display = 'none';
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

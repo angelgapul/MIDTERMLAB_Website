@@ -1,0 +1,127 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us - SmashKit</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        /* Consistent Pastel Light Pink Theme */
+        body {
+            background-color: #ffe4e1; /* Pastel Light Pink */
+            color: #5a5a5a;
+        }
+        .bg-pink {
+            background-color: #ffb3c6 !important; /* Softer Pink */
+        }
+        .text-pink {
+            color: #ff5e78 !important; /* Vibrant Pink for accents */
+        }
+    
+        .btn-primary, .btn-warning, .btn-dark, .btn-danger {
+            background-color: #ff8fa3 !important;
+            border-color: #ff8fa3 !important;
+        }
+        .btn-primary:hover, .btn-warning:hover, .btn-dark:hover, .btn-danger:hover {
+            background-color: #ff5e78 !important;
+            border-color: #ff5e78 !important;
+        }
+        .list-group-item {
+            background-color: #fff0f3;
+            border-color: #ffb3c6;
+        }
+        footer {
+            background-color: #ffb3c6;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="bg-pink text-white p-3 text-center">
+        <h1> SmashKit - Badminton Shop</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-pink">
+            <div class="container">
+                <a class="navbar-brand text-white" href="index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link text-white" href="c:\Users\Manilyn\Music\WEEK7_GEL\Shop.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="c:\Users\Manilyn\Music\WEEK7_GEL\Services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="c:\Users\Manilyn\Music\WEEK7_GEL\About Us.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+<section class="container my-5 text-center">
+    <h2 class="text-pink">About Our Shop</h2>
+    <p class="lead">SmashKit is your go-to badminton store, offering high-quality rackets, shuttlecocks, and accessories. We offer top-quality badminton gear and personalized equipment to help you play your best. Whether you're just starting or already smashing it, we've got the perfect equipment to power your game. From rackets to shuttlecocks, we've got everything you need to smash your way to victory!.</p>
+</section>
+
+<section class="container my-5">
+    <h2 class="text-center text-pink">Our Achievements</h2>
+    <ul class="list-group list-group-flush text-center">
+        <li class="list-group-item">🏆 Trusted by 10,000+ badminton players</li>
+        <li class="list-group-item">🏆 Awarded Best Sports Equipment Store 2024</li>
+        <li class="list-group-item">🏆 5-Star Customer Satisfaction Rating</li>
+    </ul>
+</section>
+<section class="container my-5 text-center">
+    <h2 class="text-pink">Contact Us</h2>
+    <p>Have any questions or concerns? Reach out to us!</p>
+    
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form action="submit_form.php" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <h4 class="text-pink">📞 Contact Information</h4>
+        <p><strong>Email:</strong> support@smashkit.com</p>
+        <p><strong>Phone:</strong> +63 912 345 6789</p>
+        <p><strong>Address:</strong> 123 Badminton St., Manila, Philippines</p>
+    </div>
+</section>
+
+<section class="container my-5 text-center">
+    <h2 class="text-pink">Where to Find Us</h2>
+    <p>Visit our official store or connect with us on social media!</p>
+    <div class="d-flex justify-content-center gap-3">
+        <a href="#" class="btn btn-primary">Shopee</a>
+        <a href="#" class="btn btn-primary">TikTok</a>
+        <a href="#" class="btn btn-primary">Lazada</a>
+        <a href="#" class="btn btn-primary">Facebook</a>
+        <a href="#" class="btn btn-primary">Instagram</a>
+    </div>
+</section>
+
+<footer class="text-white py-4 text-center">
+    <div class="container">
+        <p>&copy; 2025 SmashKit. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>  
+</html>
